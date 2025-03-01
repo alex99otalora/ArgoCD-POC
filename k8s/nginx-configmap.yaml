@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-html
+  namespace: argocd
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Custom Nginx Page</title>
+    </head>
+    <body>
+        <h1>Welcome to My Custom Nginx Page!</h1>
+    </body>
+    </html>
